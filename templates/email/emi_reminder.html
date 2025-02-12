@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMI Payment Reminder</title>
+</head>
+
+<body
+    style="margin: 0; padding: 0; font-family: Nunito, sans-serif; font-size: 16px; color: #4b5563; line-height: 1.5;">
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f8f9fa; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0"
+                    style="background-color: transparent; border-radius: 8px; overflow: hidden;">
+
+                    <tr>
+                        <td align="center" style="padding: 20px 0;">
+                            <a href="#">
+                                <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/Company.png " alt="MAANG Careers Logo" style="width: 164px;" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #2db2c4; color: #fff; text-align: center; padding: 40px 20px;text-align: center;border-radius: 0;">
+                            <table align="center" style="width: 100%;text-align: center;">
+                                <tr>
+                                    <td align="right">
+                                        <div style="width: 2.5rem; height: 1px; background-color: #fff;"></div>
+                                    </td>
+                                    <td  width="20">
+                                        <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/gmail-new+(1).png " alt="mail" style="width: 20px;
+                                        height: 13px;
+                                        margin: 0 5px;
+                                        background-color: #fff;
+                                        border: 1px solid #fff;">
+                                    </td>
+                                    <td>
+                                        <div style="width: 2.5rem; height: 1px; background-color: #fff;"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="padding-top: 20px;text-align: center;">
+                                        <div style="font-size: 24px; font-weight: bold;color: #fff;">
+                                            EMI Payment Reminder
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Main Content -->
+                     <tr>
+                        <td style="padding: 20px;">
+                            <p style="font-size: 16px; line-height: 24px; margin: 0;margin: 20px 0;">
+                                Hey <span style="font-weight: bold;">{{student_name}}</span>,
+                            </p>
+                            <p style="margin: 0 0 1rem 0; color: #4b5563;">This is a friendly reminder that your EMI for
+                                the Course Name: {{ course_name }} with Maang Careers is due on Due Date: {{ due_date}}. To ensure uninterrupted access to your course, please make your payment on or before
+                                the due date.</p>
+                            <p style="margin: 0 0 1rem 0; color: #4b5563;">
+                                <strong>EMI Details:</strong>
+                            <ul style="margin: 0; padding-left: 20px;">
+                                <li style="color: #4b5563;">Course Name: {{ course_name }}</li>
+                                <li style="color: #4b5563;">EMI Number: {{ emi_number }}</li>
+                                <li style="color: #4b5563;">EMI Amount: {{ due_amount }}</li>
+                                <li style="color: #4b5563;">Due Date: {{ due_date }}</li>
+                                <li style="color: #4b5563;">Payment Method: <a href="{{ payment_url }}"
+                                        style="color: #2db2c4; text-decoration: none;">Click here to pay</a></li>
+                            </ul>
+                            </p>
+                            <p style="margin: 0 0 1rem 0; color: #4b5563;"><strong style="display: block;margin-bottom: 10px;">Need Assistance?</strong> If you have
+                                any questions or need help with your EMI payment, please reach out to our payment team
+                                at <a href="mailto:payments@maangcareers.com"
+                                    style="color: #2db2c4; text-decoration: none;">payments@maangcareers.com</a> or call
+                                us at <a href="tel:+91 6363092823" style="color: #2db2c4; text-decoration: none;">+91
+                                    6363092823</a>.</p>
+                            <p style="margin: 0 0 1rem 0; color: #4b5563;">Thank you for your prompt attention to this
+                                matter.</p>
+                            <a href="https://maangcareers.com" target="_blank" style="text-decoration: none;display: inline-block; padding: 8px 20px; font-size: 14px; font-weight: bold; color: #ffffff; background-color: #2db2c4; text-decoration: none; border-radius: 4px; margin-top: 10px;">
+                                Visit Site
+                            </a>
+                            <p style="margin-top: 20px; color: #4b5563;">Thank you,<br>MAANG Careers Team</p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: rgba(209, 213, 219, 0.6); text-align: center; padding: 20px;" align="center">
+                            <table align="center" style="width: 100%;text-align: center;">
+                                <tr>
+                                    <td colspan="3" style="color: #2db2c4; font-weight: bold; font-size: 20px; letter-spacing: 1px;">
+                                        Get in touch
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="color: #4b5563; padding-top: 10px;">
+                                        <a href="tel:+91 6363092823" style="color: #4b5563; text-decoration: none;">+91 6363092823</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="color: #4b5563; padding-top: 10px;">
+                                        <a href="mailto:support@maangcareers.com" style="color: #4b5563; text-decoration: none;">support@maangcareers.com</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 20px;text-align: right;padding-right: 10px;">
+                                        <a href="https://www.facebook.com/MaangCareers" target="_blank">
+                                          <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/icon-facebook-new.svg
+                                          " alt="Facebook" style="width: 35px; height: 35px;">
+                                        </a>
+                                    </td>
+                                    <td style="padding-top: 20px;width: 20px;">
+                                        <a href="https://www.instagram.com/maang_careers" target="_blank">
+                                          <img src=" https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/icon-insta-new.svg
+                                          " alt="Instagram" style="width: 35px; height: 35px;">
+                                        </a>
+                                    </td>
+                                    <td style="padding-top: 20px;text-align: left;padding-left: 10px;">
+                                        <a href="https://www.linkedin.com/company/maangcareers" target="_blank">
+                                          <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/icon-linkdin-new.svg" alt="LinkedIn" style="width: 35px; height: 35px;">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%">
+                            <table width="100%" align="center">
+                                <tr>
+                                    <td colspan="3" style="background-color: #2db2c4; color: #fff; text-align: center; padding: 15px 5px; margin-top: 20px;border-radius: 0;">
+                                        <p style="font-size: 16px; margin: 10px 0;">© 2024 MAANG Careers Private Limited Company. All Rights Reserved.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

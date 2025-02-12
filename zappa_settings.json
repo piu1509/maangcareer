@@ -1,0 +1,28 @@
+{
+    "dev": {
+        "django_settings": "maangcareerers.settings",
+        "profile_name": null,
+        "project_name": "maangcareerers",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-maang",
+        "memory_size": 256,
+        "aws_region": "ap-south-1",
+        "use_precompiled_packages": true,
+        "endpoint_configuration": [
+            "REGIONAL"
+        ]
+    },
+    "prod": {
+        "django_settings": "maangcareerers.settings",
+        "profile_name": null,
+        "project_name": "maangcareerers",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa-maang",
+        "memory_size": 512,
+        "aws_region": "ap-south-1",
+        "use_precompiled_packages": true,
+        "endpoint_configuration": [
+            "REGIONAL"
+        ]
+    }
+}

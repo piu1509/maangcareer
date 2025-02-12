@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship-Certificate</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Parisienne&family=UnifrakturCook:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Parisienne&family=UnifrakturCook:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Parisienne&family=UnifrakturCook:wght@700&display=swap');
+
+        @font-face {
+            font-family: 'Zinaida';
+            src: url('fonts/Zinaida.woff2') format('woff2'),
+                url('fonts/Zinaida.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .main_bg_start {
+            /* background-color: #f3f2ed; */
+            max-width: 1104px;
+            width: 100%;
+            /* height: calc(100vh - 60px); */
+            height: 680px;
+            margin: auto;
+            padding: 0px;
+            padding-bottom: 40px;
+            padding-top: 20px;
+            background-image: url(Internship-Certificate-bg-2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            position: relative;
+        }
+
+        .certificate_container_bg {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-top: 40px;
+        }
+
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 50px;
+            font-family: 'UnifrakturCook', cursive;
+            line-height: 1;
+            color: #0c253c;
+        }
+
+        .content {
+            font-size: 20px;
+        }
+
+        .footer {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main_bg_start">
+        
+        <div class="top_qr" style="position: absolute;right: 30px;">
+            <table width="100%" style="width: 100%;font-family: 'Zinaida';">
+                <tbody>
+                    <tr>
+                        <td width="49%" align="right" style="text-align: right; padding: 0;padding-right: 2.5rem; font-size: 18px;font-family: 'Arial';">Certificate No. 13082024</td>
+                    </tr>
+                    <tr>
+                        <td height="5"></td>
+                    </tr>
+                    <tr>
+                        <td width="49%" align="right" style="text-align: right; padding: 0;padding-right: 2.5rem;">
+                            <img src="qr-code-2.png" alt="" style="max-width: 200px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <table class="certificate_container_bg">
+            <tbody>
+                <tr>
+                    <td colspan="3" class="title" style="padding: 0;">
+                        <img src="maang-logo-v2.png" alt="" style="width: 130px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="subtitle" style="font-family: 'Cinzel Decorative', serif;font-weight: 600;font-size: 45px;color: #11110f;">Certificate of Appreciation</td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="content" style="text-align: center; font-size: 18px; font-family: 'Cardo', serif; font-weight: 500; color: #11110f; width: 100%;">THIS CERTIFICATE IS PROUDLY PRESENTED TO</td>
+                </tr>
+                <tr>
+                    <td height="20"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="content"
+                        style="font-size: 70px;font-family: 'Great Vibes', cursive; font-weight: 400;line-height: 1;padding: 30px 0px 0px;">{{student_name}}</td>
+                </tr>
+                <tr>
+                    <td height="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" width="100%">
+                        <hr style="border-bottom: 1px solid #4b526f;width: 65%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15"></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="3" class="content" align="center" style="font-family: 'the_seasonsregular'; font-size: 26px; color: #11110f; text-align: center; vertical-align: middle;">
+                        for completing the <strong>{{course_name}} <span style="font-family: Arial, Helvetica, sans-serif;">(</span> Fast Track <span style="font-family: Arial, Helvetica, sans-serif;">)</span> <br> {{end_date}}</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="40"></td>
+                </tr>
+                <tr>
+                    <td align="center" width="30%" style="vertical-align: middle;">
+                        <table align="right">
+                            <tr>
+                                <td>
+                                    <img src="akhil-signature.png" alt="" style="max-width: 200px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="footer" style="display: table-cell; width: 100%; padding: 0;">
+                                    <span style="font-size: 22px; color: #11110f; font-family: 'Cardo', serif;font-weight: 600;">Akhil Gunti</span><br>
+                                    <span style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: #11110f;">Course Manager</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="display: table-cell; padding: 0;vertical-align: middle;" width="25%">
+                        <img src="batch-3.png" alt="" style="max-height: 150px;">
+                    </td>
+                    <td align="center" width="30%" style="vertical-align: middle;">
+                        <table align="left">
+                            <tr>
+                                <td>
+                                    <img src="hemanth-signature.png" alt="" style="max-width: 150px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="footer" style="display: table-cell; padding: 0;" width="100%">
+                                    <span style="font-size: 22px; color: #11110f; font-family: 'Cardo', serif;font-weight: 600;">Hemanth T</span><br>
+                                    <span style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;color: #11110f;">Instructor</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

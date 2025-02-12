@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Certificate</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+        @font-face {
+            font-family: 'Zinaida';
+            src: url('fonts/Zinaida.woff2') format('woff2'),
+                url('fonts/Zinaida.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'the_seasonsregular';
+            src: url('fonts/fontspring-demo-theseasons-reg-webfont.woff2') format('woff2'),
+                url('fonts/fontspring-demo-theseasons-reg-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .main_bg_start {
+            background-color: #f5f5f1;
+            max-width: 1102px;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+        .certificate_container_bg {
+            width: 100%;
+            height: auto;
+            background-image: url(Alpha-Certificate-v3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 110px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 18px;
+        }
+
+        .content {
+            font-size: 20px;
+        }
+
+        .footer {
+            font-size: 16px;
+        }
+
+        .signature-table {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .signature-table td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        .signature-table img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_bg_start">
+        <table>
+            <tbody>
+                <tr>
+                    <td width="50%" align="left" style="font-size: 18px; font-family: 'Cardo', serif;">Certificate No. 13082024</td>
+                    <td width="50%" align="right">
+                        <img src="qr-code.png" alt="">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="certificate_container_bg">
+            <table>
+                <tr>
+                    <td colspan="2" class="title">
+                        <img src="maang-logo-v2.png" alt="" style="width: 130px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="subtitle" style="font-size: 40px; color: #0c253c;">Certificate of Achievement</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 20px 0;">
+                        <img src="down-border.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content" style="font-size: 18px; color: #11110f;">THIS CERTIFICATE IS PROUDLY PRESENTED TO</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content" style="font-size: 50px; font-family: 'Parisienne', cursive; color: #11110f; padding: 30px 0;">{{student_name}}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content" style="font-size: 20px; color: #11110f;">for completing the <strong>{{course_name}} (Fast Track) in {{end_date}}</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 30px 0;">
+                        <table class="signature-table">
+                            <tr>
+                                <td align="left">
+                                    <img src="akhil-signature.png" alt="">
+                                    <div class="footer">
+                                        <span style="font-size: 22px; color: #0c253c; font-family: 'UnifrakturCook', cursive;">Akhil Gunti</span><br>
+                                        <span style="font-size: 18px; color: #11110f;">Course Manager</span>
+                                    </div>
+                                </td>
+                                <td align="center">
+                                    <img src="batch-v2.png" alt="">
+                                </td>
+                                <td align="right">
+                                    <img src="hemanth-signature.png" alt="">
+                                    <div class="footer">
+                                        <span style="font-size: 22px; color: #0c253c; font-family: 'UnifrakturCook', cursive;">Hemanth T</span><br>
+                                        <span style="font-size: 18px; color: #11110f;">Instructor</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

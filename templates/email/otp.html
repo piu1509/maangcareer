@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+</head>
+
+<body>
+    <table align="center" style="width: 100%; max-width: 42rem; font-family: 'Nunito', sans-serif; margin-top: 20px;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <a href="#">
+                    <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/Company.png " alt="MAANG Careers Logo" style="width: 164px;" />
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #2db2c4; color: #fff; text-align: center; padding: 40px 20px;text-align: center;">
+                <table align="center" style="width: 100%;text-align: center;">
+                    <tr>
+                        <td align="right">
+                            <div style="width: 2.5rem; height: 1px; background-color: #fff;"></div>
+                        </td>
+                        <td  width="20">
+                            <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/gmail-new+(1).png " alt="mail" style="width: 20px;
+                            height: 13px;
+                            margin: 0 5px;
+                            background-color: #fff;
+                            border: 1px solid #fff;">
+                        </td>
+                        <td>
+                            <div style="width: 2.5rem; height: 1px; background-color: #fff;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="padding-top: 20px;text-align: center;">
+                            <div style="font-size: 24px; font-weight: bold;color: #fff;">
+                                Your Login OTP for MAANG Careers
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 20px;">
+                <h4 style="color: #374151; font-size: 16px;font-weight: 400;">Hello <strong>{{student_name}}</strong>,</h4>
+                <p style="font-size: 16px; line-height: 24px; color: #4b5563;">
+                    To complete your login, please use the One-Time Password (OTP) below:
+                </p>
+                <table align="center" style="margin-top: 10px;">
+                    <tr>
+                      {% for i in otp %}
+                        <td style="border: 1px solid #2db2c4; border-radius: 4px; padding: 10px; text-align: center; margin-right: 5px; display: inline-block;">
+                            <div style="font-size: 18px; font-weight: bold; color: #2db2c4;">{{i}}</div>
+                        </td>
+                      {% endfor %}
+                        {% comment %} <td style="border: 1px solid #2db2c4; border-radius: 4px; padding: 4px 10px; text-align: center; margin-right: 5px;display: inline-block;">
+                            <div style="font-size: 18px; font-weight: bold; color: #2db2c4;">5</div>
+                        </td>
+                        <td style="border: 1px solid #2db2c4; border-radius: 4px; padding: 4px 10px; text-align: center; margin-right: 5px;display: inline-block;">
+                            <div style="font-size: 18px; font-weight: bold; color: #2db2c4;">5</div>
+                        </td>
+                        <td style="border: 1px solid #2db2c4; border-radius: 4px; padding: 4px 10px; text-align: center; margin-right: 5px;display: inline-block;">
+                            <div style="font-size: 18px; font-weight: bold; color: #2db2c4;">5</div>
+                        </td>
+                        <td style="border: 1px solid #2db2c4; border-radius: 4px; padding: 4px 10px; text-align: center; margin-right: 5px;display: inline-block;">
+                            <div style="font-size: 18px; font-weight: bold; color: #2db2c4;">5</div>
+                        </td> {% endcomment %}
+                    </tr>
+                </table>
+                <p style="margin-top: 20px; font-size: 16px; line-height: 24px; color: #4b5563;">
+                    This code is valid for the next <span style="font-weight: bold;">5 minutes</span>. For your security, please do not share this OTP with anyone.
+                </p>
+                <p style="margin-top: 20px; font-size: 16px; line-height: 24px; color: #4b5563;">
+                    Thank you, <br /> MAANG Careers Team
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 20px; color: #7b8794;">
+                <p style="font-size: 14px; line-height: 20px;">
+                    If you didn’t request this code, please ignore this email or contact our support team immediately at 
+                    <a href="mailto:support@maangcareers.com" style="color: #2db2c4;">support@maangcareers.com</a>.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: rgba(209, 213, 219, 0.6); text-align: center; padding: 20px;" align="center">
+                <table align="center" style="width: 100%;text-align: center;">
+                    <tr>
+                        <td colspan="3" style="color: #2db2c4; font-weight: bold; font-size: 20px; letter-spacing: 1px;">
+                            Get in touch
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="color: #4b5563; padding-top: 10px;">
+                            <a href="tel:+91 6363092823" style="color: #4b5563; text-decoration: none;">+91 6363092823</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="color: #4b5563; padding-top: 10px;">
+                            <a href="mailto:support@maangcareers.com" style="color: #4b5563; text-decoration: none;">support@maangcareers.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 20px;text-align: right;padding-right: 10px;">
+                            <a href="https://www.facebook.com/MaangCareers" target="_blank">
+                              <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/icon-facebook-new.svg
+                              " alt="Facebook" style="width: 35px; height: 35px;">
+                            </a>
+                        </td>
+                        <td style="padding-top: 20px;width: 20px;">
+                            <a href="https://www.instagram.com/maang_careers" target="_blank">
+                              <img src=" https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/icon-insta-new.svg
+                              " alt="Instagram" style="width: 35px; height: 35px;">
+                            </a>
+                        </td>
+                        <td style="padding-top: 20px;text-align: left;padding-left: 10px;">
+                            <a href="https://www.linkedin.com/company/maangcareers" target="_blank">
+                              <img src="https://images-maang-careers.s3.ap-south-1.amazonaws.com/logos/icon-linkdin-new.svg" alt="LinkedIn" style="width: 35px; height: 35px;">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%">
+                <table width="100%" align="center">
+                    <tr>
+                        <td colspan="3" style="background-color: #2db2c4; color: #fff; text-align: center; padding: 15px 5px; margin-top: 20px;">
+                            <p style="font-size: 16px; margin: 10px 0;">© 2024 MAANG Careers Private Limited Company. All Rights Reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
